@@ -1,0 +1,51 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html ng-app="app">
+<head>
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/angular-translate.min.js"></script>
+    <script src="~/Scripts/jquery-2.1.4.min.js"></script>
+    <script src="~/Scripts/jquery.signalR-2.2.0.min.js"></script>
+    <script src="~/signalr/hubs"></script>
+    <script src="/Scripts/bootstrap.min.js"></script>
+    <link href="/Content/bootstrap.min.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width" />
+    <title>SignalrCurrency</title>
+    <script src="~/Scripts/SignalRCurrency.js"></script>   
+</head>
+<body>
+    <div class="container">
+        <h2>Real Time SignalR Currency</h2>
+        <p>This page using SignalR socket. Soo all the datas are live and dynamic..</p>
+        <div ng-controller="Controller" class="table-responsive">
+            <table class="table table-hover table-bordered table-striped table-condensed">
+                <thead>
+                    <tr>
+                        <th>CurrencyName</th>
+                        <th>ForexBuying</th>
+                        <th>ForexSelling</th>
+                        <th>BanknoteBuying</th>
+                        <th>BanknoteSelling</th>
+                        <th>CrossRateUSD</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr ng-repeat="data in currencyDatas">
+                        <td>{{data.CurrencyName | translate}}</td>
+                        <td>{{data.ForexBuying}}</td>
+                        <td>{{data.ForexSelling}}</td>
+                        <td>{{data.BanknoteBuying}}</td>
+                        <td>{{data.BanknoteSelling}}</td>
+                        <td>{{data.CrossRateUSD}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

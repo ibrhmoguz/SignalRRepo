@@ -1,0 +1,33 @@
+﻿@model List<DAL.CurrencyReport>
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <script src="~/Scripts/angular.min.js"></script>
+    <script src="~/Scripts/jquery-2.1.4.min.js"></script>
+    <meta name="viewport" content="width=device-width" />
+    <title>JqueryCurrency</title>
+    <script>
+        (function () {
+            var int = self.setInterval(RefreshData, 60000);
+            //setTimeout(RefreshData, 10000);
+        })();
+        function RefreshData() {
+            $.post("/Home/CurrencyList", function (currencyData) {
+                console.log("Post Data");
+                $("#CurrencyList").html(currencyData);
+            });
+            //setTimeout(RefreshData, 10000);
+        }
+    </script>
+</head>
+<body>
+    <div id="CurrencyList">
+        @{Html.RenderPartial("CurrencyList", Model);}
+    </div>
+</body>
+</html>

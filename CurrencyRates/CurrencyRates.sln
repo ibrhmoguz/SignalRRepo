@@ -1,0 +1,52 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30501.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyRates", "CurrencyRates\CurrencyRates.csproj", "{5060CB6F-CE7E-4ECA-936F-243768CFBEC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyService", "CurrencyService\CurrencyService.csproj", "{FEDBFA0C-5606-4E6D-B5A8-BB9034677D79}"
+EndProject
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "AzureCloudCurrencyWorker", "AzureCloudCurrencyWorker\AzureCloudCurrencyWorker.ccproj", "{2B096FFB-0F93-4403-BC55-F16A2F9C4A7E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkerRole1", "WorkerRole1\WorkerRole1.csproj", "{EEB2301E-AEFD-4BEF-A5A6-61472CA3B14F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CurrencyWindowsServices", "CurrencyWindowsServices\CurrencyWindowsServices.csproj", "{48A9C2BA-ACE4-42AB-857C-20072871EF6A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{4634F050-6FD7-4531-91A9-0AAAC63B06CC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5060CB6F-CE7E-4ECA-936F-243768CFBEC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5060CB6F-CE7E-4ECA-936F-243768CFBEC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5060CB6F-CE7E-4ECA-936F-243768CFBEC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5060CB6F-CE7E-4ECA-936F-243768CFBEC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FEDBFA0C-5606-4E6D-B5A8-BB9034677D79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEDBFA0C-5606-4E6D-B5A8-BB9034677D79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEDBFA0C-5606-4E6D-B5A8-BB9034677D79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEDBFA0C-5606-4E6D-B5A8-BB9034677D79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2B096FFB-0F93-4403-BC55-F16A2F9C4A7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2B096FFB-0F93-4403-BC55-F16A2F9C4A7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2B096FFB-0F93-4403-BC55-F16A2F9C4A7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2B096FFB-0F93-4403-BC55-F16A2F9C4A7E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EEB2301E-AEFD-4BEF-A5A6-61472CA3B14F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EEB2301E-AEFD-4BEF-A5A6-61472CA3B14F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EEB2301E-AEFD-4BEF-A5A6-61472CA3B14F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EEB2301E-AEFD-4BEF-A5A6-61472CA3B14F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48A9C2BA-ACE4-42AB-857C-20072871EF6A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48A9C2BA-ACE4-42AB-857C-20072871EF6A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48A9C2BA-ACE4-42AB-857C-20072871EF6A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48A9C2BA-ACE4-42AB-857C-20072871EF6A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4634F050-6FD7-4531-91A9-0AAAC63B06CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4634F050-6FD7-4531-91A9-0AAAC63B06CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4634F050-6FD7-4531-91A9-0AAAC63B06CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4634F050-6FD7-4531-91A9-0AAAC63B06CC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
